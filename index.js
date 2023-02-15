@@ -6,9 +6,9 @@ module.exports = {
 		'at-rule-no-unknown': [
 			true,
 			{
-			  ignore: ['function', 'if', 'each', 'include', 'mixin', 'return']
-			}
-		  ],
+				ignoreAtRules: ['function', 'if', 'each', 'include', 'mixin', 'return'],
+			},
+		],
 		'block-no-empty': true,
 		'color-no-invalid-hex': true,
 		'comment-no-empty': true,
@@ -43,7 +43,8 @@ module.exports = {
 		'selector-type-no-unknown': [
 			true,
 			{
-				ignore: ['custom-elements', 'icon', '/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/'],
+				ignore: ['custom-elements'],
+				ignoreTypes: ['icon', '/^[a-zA-Z]([a-zA-Z0-9]*-[a-zA-Z0-9]+)+/'],
 			},
 		],
 		'string-no-newline': true,
