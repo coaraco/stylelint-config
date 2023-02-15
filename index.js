@@ -6,7 +6,7 @@ module.exports = {
 		'at-rule-no-unknown': [
 			true,
 			{
-				ignoreAtRules: ['function', 'if', 'each', 'include', 'mixin', 'return'],
+				ignoreAtRules: ['function', 'if', 'each', 'include', 'mixin', 'return', 'use'],
 			},
 		],
 		'block-no-empty': true,
@@ -25,7 +25,12 @@ module.exports = {
 		'font-family-no-missing-generic-family-keyword': true,
 		'function-calc-no-unspaced-operator': true,
 		'function-linear-gradient-no-nonstandard-direction': true,
-		'function-no-unknown': true,
+		'function-no-unknown': [
+			true,
+			{
+				ignoreFunctions: ['const'],
+			},
+		],
 		'keyframe-block-no-duplicate-selectors': true,
 		'keyframe-declaration-no-important': true,
 		'media-feature-name-no-unknown': true,
