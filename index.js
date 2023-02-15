@@ -28,7 +28,7 @@ module.exports = {
 		'function-no-unknown': [
 			true,
 			{
-				ignoreFunctions: ['const'],
+				ignoreFunctions: ['const', 'math.div'],
 			},
 		],
 		'keyframe-block-no-duplicate-selectors': true,
