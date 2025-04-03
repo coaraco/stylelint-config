@@ -6,7 +6,7 @@ module.exports = {
 		'at-rule-no-unknown': [
 			true,
 			{
-				ignoreAtRules: ['function', 'if', 'each', 'include', 'mixin', 'return', 'use'],
+				ignoreAtRules: ['function', 'if', 'each', 'include', 'mixin', 'return', 'use', 'forward'],
 			},
 		],
 		'block-no-empty': true,
@@ -40,7 +40,12 @@ module.exports = {
 		'no-duplicate-selectors': true,
 		'no-empty-source': true,
 		'no-invalid-double-slash-comments': true,
-		'no-invalid-position-at-import-rule': true,
+		'no-invalid-position-at-import-rule': [
+			true,
+			{
+				ignoreAtRules: ['use', 'forward'],
+			},
+		],
 		'no-irregular-whitespace': true,
 		'property-no-unknown': true,
 		'selector-pseudo-class-no-unknown': true,
